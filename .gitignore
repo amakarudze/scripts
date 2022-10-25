@@ -1,0 +1,15 @@
+.coverage
+.venv/
+venv/
+.DS_Store
+.env
+.environment
+*/__pycache__/
+*/*/__pycache__/
+*/*/*/__pycache__/
+*/*/*/*/__pycache__/
+db.sqlite3
+.idea/
+*.pyc
+*.log
+htmlcov/
