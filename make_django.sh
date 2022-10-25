@@ -55,3 +55,6 @@ echo "# $project_name" >> README.md
 
 # Create a .env file for settings
 cp .env_example .env
+pre-commit install
+
+echo "Your new django project $django_project created successfully!"
