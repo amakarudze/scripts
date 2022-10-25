@@ -25,7 +25,6 @@ cp scripts/pytest.ini $project_root
 cp scripts/LICENCE $project_root 
 cp scripts/.dockerignore $project_root
 cp scripts/Dockerfile $project_root
-cp scripts/README.md $project_root
 cp scripts/setup.cfg $project_root
 cp scripts/docker-compose.yaml $project_root
 cp scripts/.env_example $project_root
@@ -52,7 +51,7 @@ read -p "Enter the name of your new app: " app_name
 python manage.py startapp $app_name
 
 echo "DJANGO_SETTINGS_MODULE=$project_name.settings" >> pytest.ini
-echo "#$project_name" >> README.md
+echo "# $project_name" >> README.md
 
 # Create a .env file for settings
 cp .env_example .env
