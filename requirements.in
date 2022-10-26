@@ -3,6 +3,7 @@ django==4.1.2
 coverage==6.5.0
 dj-database-url==1.0.0
 flake8==5.0.4
+flake8-black==0.3.3
 psycopg2-binary==2.9.4
 python-dotenv==0.21.0
 pytest==7.1.3
