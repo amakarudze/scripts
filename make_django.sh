@@ -58,6 +58,12 @@ sed "2 i $project_description" README.md
 
 # Create a .env file for settings
 cp .env_example .env
+
+# Initialize git 
+git init
+
+# Install pre-commit
 pre-commit install
 
+# The end!
 echo "Your new django project $django_project created successfully!"
