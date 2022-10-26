@@ -60,7 +60,7 @@ You can run tests by using the following command: `coverage run -m pytest` to ge
 
 ### Using Docker
 The scripts copied into your new project include pre-configured `Dockerfile` , `docker-compose.yml` and `.dockerignore` files. To spin up
-the docker containers run `docker-compose up -d build`.
+the docker containers run `docker-compose up -d --build`.
 
 ### Making pre-commit hooks work
 Make sure you have [pre-commit](https://pre-commit.com/) installed on your local machine. If not, 
