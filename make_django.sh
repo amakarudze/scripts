@@ -50,8 +50,11 @@ django-admin startproject $project_name .
 read -p "Enter the name of your new app: " app_name
 python manage.py startapp $app_name
 
-echo "DJANGO_SETTINGS_MODULE=$project_name.settings" >> pytest.ini
+sed "2 i DJANGO_SETTINGS_MODULE=$project_name.settings" pytest.ini
+
 echo "# $project_name" >> README.md
+read -p "Enter a short description for your project: " project_description
+sed "2 i $project_description" README.md
 
 # Create a .env file for settings
 cp .env_example .env
