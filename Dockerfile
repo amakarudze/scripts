@@ -1,17 +1,14 @@
-FROM python:3.10.8-bullseye
+FROM python:3.10-bullseye
 
-ENV PIP_DISABLE_PIP_VERSION_CHECK 1
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONBUFFERED 1
+LABEL maintainer="makarudze.com"
 
-WORKDIR /code
+ENV PYTHONUNBUFFERED 1
 
-COPY ./requirements.txt
-RUN pip install -r requirements.txt
-
+# Install dependencies.
 COPY ./requirements.txt /tmp/requirements.txt
-COPY ./code /code
 
+COPY . /code
+WORKDIR /code
 EXPOSE 8000
 
 RUN python -m venv /py && \
