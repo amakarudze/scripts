@@ -48,7 +48,7 @@ DB_PORT = os.environ.get("DATABASE_PROT")
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=f"postgres://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT/DB_NAME}"
+        default=f"postgres://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
         )}
 
 ```
