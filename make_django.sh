@@ -32,6 +32,7 @@ cp -r scripts/.github $project_root
 cp scripts/codecov.yaml $project_root
 cp scripts/.pre-commit-config.yaml $project_root
 cp scripts/.gitignore $project_root
+cp scripts/.coverage $project_root
 
 # Navigate to new folder and create a virtual environment
 cd $project_root
