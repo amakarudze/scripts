@@ -3,7 +3,7 @@
 This project automates the creation of a new Django project that uses Docker. It is still a work in progress.
 
 ## Installation
-Clone this repository using this command ``.
+Clone this repository using this command `git clone git@github.com:amakarudze/scripts.git`.
 
 ## Usage
 The project assumes all your code resides in one location, a directory called `code`. 
